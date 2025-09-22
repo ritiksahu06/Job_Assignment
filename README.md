@@ -1,12 +1,73 @@
-# React + Vite
+# React + Tailwind Product Listing Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React + Vite project styled with Tailwind CSS.  
+It recreates a **pixel-accurate product listing screen** from Figma with fully working **filters, sorting, pagination, and search**.  
+The layout is **responsive** across desktop, tablet, and mobile.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### 1. Reusable Components
+- Navbar, Sidebar, FilterPanel, ProductCard, Badge, Rating, Pagination, Footer
+- Configurable via props and matches Figma design style
+- Components are reusable across the project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Sidebar Filters
+- Categories expand/collapse intuitively
+- Color selector filter with visual feedback on ProductCard
+- Shows at least 6 items per category (placeholders or “View more” if fewer)
+
+### 3. Product Listing Grid
+- ProductCard includes:
+  - Product image (placeholder images used if needed)
+  - HOT badge when applicable
+  - Title
+  - Original price, discount price, discount percent
+  - Rating (stars + count)
+- Fully responsive grid layout matching Figma spacing and breakpoints
+
+### 4. Search Functionality
+- Search products by **name**
+- Updates product listing in real-time as the user types
+
+### 5. Sorting & Pagination
+- Sort by Name, Price, Popularity (ascending/descending)
+- Pagination updates content without full reloads
+- Sorting and pagination states are synced (URL query params recommended)
+
+### 6. Responsiveness
+- Desktop, tablet, and mobile layouts
+- Sidebar collapses into a drawer on smaller screens
+- Tested on edge widths: 320px, 768px, 1024px
+
+### 7. Footer
+- Layout, links, and spacing match the Figma design exactly
+
+### 8. Data & State
+- Mock dataset of 24+ products with fields:
+
+
+## Setup & Run Instructions (For Viewer)
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository:**
+git clone https://github.com/ritiksahu06/Job_Assignment.git
+
+2. **Go into the project folder:**
+cd Job_Assignment
+
+3. **Install all dependencies:**
+npm install
+
+4. **Start the development server:**
+npm run dev
+
+5. **Open the project in your browser:**
+Visit http://localhost:5173
+ to see the app running.
+
+ ## Live Demo
+
+You can view the deployed project here: [Job Assignment Live](https://job-assignment-murex.vercel.app/)
