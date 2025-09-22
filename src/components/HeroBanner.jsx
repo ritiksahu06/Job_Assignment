@@ -1,5 +1,5 @@
 import React from "react";
-import shoe from "../../public/assets/shoe_logo.png"; // path must be correct
+
 
 
 const HeroBanner = ({ title, subtitle, ctaLink }) => {
@@ -13,7 +13,7 @@ const HeroBanner = ({ title, subtitle, ctaLink }) => {
         </a>
       </div>
       <div className="lg:flex-1 flex justify-center lg:justify-end">
-        <img src={shoe} alt="Hero" className="w-[300px] sm:w-[400px] lg:w-[442px] h-auto object-contain" />
+        <img src="/assets/shoe_logo.png" alt="Hero" className="w-[300px] sm:w-[400px] lg:w-[442px] h-auto object-contain" />
       </div>
     </div>
   );

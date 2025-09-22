@@ -1,11 +1,4 @@
 import React from "react";
-import icon from "../../public/assets/icon.png";
-import facebook from "../../public/assets/facebook.png";
-import twitter from "../../public/assets/twitter.png";
-import icon1 from "../../public/assets/footer_icons/icon1.png";
-import icon2 from "../../public/assets/footer_icons/icon2.png";
-import icon3 from "../../public/assets/footer_icons/icon3.png";
-import icon4 from "../../public/assets/footer_icons/icon4.png";
 
 const Footer = () => {
   return (
@@ -15,7 +8,7 @@ const Footer = () => {
         {/* Column 1 */}
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
-            <img src={icon} alt="Logo" className="w-[38px] h-[36px]" />
+            <img src="/assets/Icon.png" alt="Logo" className="w-[38px] h-[36px]" />
             <p className="font-poppins font-bold text-lg">E-Comm</p>
           </div>
           <p className="font-proxima text-xs md:text-sm max-w-[280px]">
@@ -40,7 +33,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-blue-600 transition-colors"
             >
-              <img src={facebook} alt="Facebook" className="w-3 h-3" />
+              <img src="/assets/facebook.png" alt="Facebook" className="w-3 h-3" />
             </a>
             {/* Twitter */}
             <a
@@ -49,7 +42,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-blue-400 transition-colors"
             >
-              <img src={twitter} alt="Twitter" className="w-4 h-3" />
+              <img src="/assets/twitter.png" alt="Twitter" className="w-4 h-3" />
             </a>
           </div>
         </div>
@@ -91,11 +84,13 @@ const Footer = () => {
             www.bisenbaev.com
           </a>
         </p>
-        <div className="flex items-center gap-4">
-          {[icon1, icon2, icon3, icon4].map((icon, idx) => (
-            <img key={idx} src={icon} alt={`payment${idx}`} className="h-6" />
-          ))}
-        </div>
+       <div className="flex items-center gap-4">
+  <img src="/assets/footer_icons/icon1.png" alt="payment1" className="h-6" />
+  <img src="/assets/footer_icons/icon2.png" alt="payment2" className="h-6" />
+  <img src="/assets/footer_icons/icon3.png" alt="payment3" className="h-6" />
+  <img src="/assets/footer_icons/icon4.png" alt="payment4" className="h-6" />
+</div>
+
       </div>
     </footer>
   );

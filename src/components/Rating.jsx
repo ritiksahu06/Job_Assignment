@@ -1,7 +1,4 @@
 import React from "react";
-import filledStar from "../../public/assets/frontend_assets/star.png"; // filled star
-import emptyStar from "../../public/assets/frontend_assets/star2.png";   // empty star
-
 const RatingStars = ({ value = 0, size = "sm" }) => {
   const clampedValue = Math.max(0, Math.min(5, value));
   const filledStars = Math.round(clampedValue);
@@ -20,7 +17,7 @@ const RatingStars = ({ value = 0, size = "sm" }) => {
       {[...Array(5)].map((_, i) => (
         <img
           key={i}
-          src={i < filledStars ? filledStar : emptyStar}
+          src={i < filledStars ? "/assets/frontend_assets/star.png" : "/assets/frontend_assets/star2.png"}
           alt={i < filledStars ? "Filled Star" : "Empty Star"}
           className={`${starSize} object-contain`}
         />

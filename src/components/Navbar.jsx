@@ -1,8 +1,6 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../public/assets/logo.png";
-import cart from "../../public/assets/cart.png";
 
 const Navbar = ({ onToggleSidebar }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +11,7 @@ const Navbar = ({ onToggleSidebar }) => {
     <nav className="fixed top-0 left-0 w-full h-[60px] bg-white shadow-md flex items-center justify-between px-4 sm:px-6 z-50 text-lg">
       {/* Logo */}
       <div className="flex items-center justify-center bg-gray-200 rounded w-[120px] h-[32px] sm:w-[150px] sm:h-[38px] xl:w-[182px] xl:h-[44px]">
-        <img src={logo} alt="LOGO" className="h-full object-contain" />
+        <img src="/assets/logo.png" alt="LOGO" className="h-full object-contain" />
       </div>
 
       {/* Desktop Links */}
@@ -60,7 +58,7 @@ const Navbar = ({ onToggleSidebar }) => {
         {/* Cart */}
         <div className="flex items-center gap-2 h-[44px]">
           <div className="w-[31px] h-[34px] flex items-center justify-center">
-            <img src={cart} alt="Cart" className="w-full h-full object-contain" />
+            <img src="/assets/Cart.png" alt="Cart" className="w-full h-full object-contain" />
           </div>
           <div className="hidden sm:flex items-center gap-2">
             <p className="text-gray-800">items</p>

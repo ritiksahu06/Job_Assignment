@@ -1,6 +1,4 @@
 import React from "react";
-import switch_1 from "../../public/assets/switch-1.png";
-import switch_2 from "../../public/assets/switch-2.png";
 
 const Toolbar = ({ totalCount, search, setSearch, sortBy, setSortBy, show, setShow, view, setView }) => {
   return (
@@ -52,14 +50,14 @@ const Toolbar = ({ totalCount, search, setSearch, sortBy, setSortBy, show, setSh
           aria-label="Grid view"
           className={`p-1 rounded ${view === "grid" ? "bg-[#40BFFF] text-white" : ""}`}
         >
-          <img src={switch_1} alt="Grid View" className="w-[61.47px] h-[62.57px]" />
+          <img src="/assets/switch-1.png" alt="Grid View" className="w-[61.47px] h-[62.57px]" />
         </button>
         <button
           onClick={() => setView("list")}
           aria-label="List view"
           className={`p-1 rounded ${view === "list" ? "bg-[#40BFFF] text-white" : ""}`}
         >
-          <img src={switch_2} alt="List View" className="w-[61.47px] h-[62.57px]" />
+          <img src="/assets/switch-2.png" alt="List View" className="w-[61.47px] h-[62.57px]" />
         </button>
       </div>
     </div>
