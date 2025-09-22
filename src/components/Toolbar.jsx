@@ -1,6 +1,6 @@
 import React from "react";
-import switch_1 from "../assets/switch-1.png";
-import switch_2 from "../assets/switch-2.png";
+import switch_1 from "../../public/assets/switch-1.png";
+import switch_2 from "../../public/assets/switch-2.png";
 
 const Toolbar = ({ totalCount, search, setSearch, sortBy, setSortBy, show, setShow, view, setView }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import filledStar from "../assets/frontend_assets/star.png"; // filled star
-import emptyStar from "../assets/frontend_assets/star2.png";   // empty star
+import filledStar from "../../public/assets/frontend_assets/star.png"; // filled star
+import emptyStar from "../../public/assets/frontend_assets/star2.png";   // empty star
 
 const RatingStars = ({ value = 0, size = "sm" }) => {
   const clampedValue = Math.max(0, Math.min(5, value));

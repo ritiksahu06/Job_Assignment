@@ -1,8 +1,8 @@
 import React from "react";
-import shoe from "../assets/shoe_logo.png"; // path must be correct
+import shoe from "../../public/assets/shoe_logo.png"; // path must be correct
 
 
-const HeroBanner = ({ title, subtitle, ctaLink, image }) => {
+const HeroBanner = ({ title, subtitle, ctaLink }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between bg-[#40BFFF] shadow p-6 gap-4">
       <div className="flex flex-col gap-2 text-center lg:text-left lg:flex-1">

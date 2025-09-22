@@ -1,11 +1,11 @@
 import React from "react";
-import icon from "../assets/icon.png";
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/twitter.png";
-import icon1 from "../assets/footer_icons/icon1.png";
-import icon2 from "../assets/footer_icons/icon2.png";
-import icon3 from "../assets/footer_icons/icon3.png";
-import icon4 from "../assets/footer_icons/icon4.png";
+import icon from "../../public/assets/icon.png";
+import facebook from "../../public/assets/facebook.png";
+import twitter from "../../public/assets/twitter.png";
+import icon1 from "../../public/assets/footer_icons/icon1.png";
+import icon2 from "../../public/assets/footer_icons/icon2.png";
+import icon3 from "../../public/assets/footer_icons/icon3.png";
+import icon4 from "../../public/assets/footer_icons/icon4.png";
 
 const Footer = () => {
   return (

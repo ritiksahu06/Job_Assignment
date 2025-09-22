@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
-import cart from "../assets/cart.png";
+import logo from "../../public/assets/logo.png";
+import cart from "../../public/assets/cart.png";
 
 const Navbar = ({ onToggleSidebar }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
